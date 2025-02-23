@@ -15,7 +15,7 @@ const cube = new THREE.Mesh(geometry, material);
 scene.add(cube);
 
 // 4. Add lighting
-const light = new THREE.DirectionalLight(0x9CDBA6, 1); // Adjust light intensity
+const light = new THREE.DirectionalLight(0x9CDBA6, 10); // Adjust light intensity
 light.position.set(1, 1, 1);
 scene.add(light);
 
