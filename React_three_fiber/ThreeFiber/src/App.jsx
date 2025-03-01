@@ -24,9 +24,9 @@ function App() {
   return (
    <Canvas style={{display:"flex", justifyContent:'center', alignItems:'center', height:"100vh", width:'100vw'}}>
    <OrbitControls enableZoom enablePan enableRotate/>
-  <directionalLight position={[1,1,1]} intensity={10} color={0x9CDBA6}/>
-  <color attach="background" args={['#F0F0F0']}/>
-  <RotatinCube/>
+    <directionalLight position={[1,1,1]} intensity={10} color={0x9CDBA6}/>
+    <color attach="background" args={['#F0F0F0']}/>
+    <RotatinCube/>
    </Canvas>
   )
 }
