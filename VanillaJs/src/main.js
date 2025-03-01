@@ -32,7 +32,7 @@ light.position.set(1, 1, 1);
 scene.add(light);
 
 // 6. Set up the renderer
-const renderer = new THREE.WebGLRenderer({ canvas });
+const renderer = new THREE.WebGLRenderer({ canvas }); //Three Js created the renderer that output the graphics to the canvas
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio)
 
