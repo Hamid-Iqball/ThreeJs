@@ -55,4 +55,15 @@ function animate() {
     controls.update()
     renderer.render(scene, camera);
 }
+
+
+// 8) Handle Window sizing
+window.addEventListener('resize', ()=>{
+    camera.aspect = window.innerWidth / window.innerHeight
+    camera.updateProjectionMatrix(); // After changing the aspect ratio of camera we need to uodate the  projections matrix as well
+    renderer.setSize(window.innerWidth, window.innerHeight)
+
+} )
+
+
 animate();
