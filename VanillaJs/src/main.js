@@ -15,11 +15,11 @@ camera.position.z = 5;
 // 4. Create objects (Dodecahedron and Box)
 const geometry = new THREE.DodecahedronGeometry();
 const material = new THREE.MeshBasicMaterial({ color: "#468585" });
-const dodecahedron = new THREE.Mesh(geometry, material);
+const dodecahedron = new THREE.Mesh(geometry, material); // Object 1
 
 const boxGeometry = new THREE.BoxGeometry(2, 0.1, 2);
 const boxMaterial = new THREE.MeshBasicMaterial({ color: "#B4B4B3" });
-const box = new THREE.Mesh(boxGeometry, boxMaterial);
+const box = new THREE.Mesh(boxGeometry, boxMaterial); // oBJECT 2
 box.position.y = -1.5;
 
 // Add objects to the scene
